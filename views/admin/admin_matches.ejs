@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/match.css">
+    <title>Admin-Matches</title>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1><a href="/">The Matches</a></h1>
+            <a href="/admin/add_match">Add One Match</a>
+        </div>
+        <% if (matches.length > 0) { %>
+                <% for(let match of matches){ %>
+                    <div class="container">
+                        <div class="league">
+                            <h2><%= match.league %></h2>
+                        </div>
+                        <div class="league">
+                            <h3><%= match.date %></h3>
+                        </div>
+                        <ul>
+                            <li><h3><%= match.homeTeam %></h3></li>
+                            <li><h3>VS</h3></li>
+                            <li><h3><%= match.awayTeam %></h3></li>
+                            <li><h3><%= match.homeScore %></h3></li>
+                            <li><h3>:</h3></li>
+                            <li><h3><%= match.awayScore %></h3></li>
+                        </ul>
+                        <div class="adit_button">
+                        <a href="/admin/edit/<%= match._id%>" >Edit</a>
+                        <form action="/admin/delete_match" method="POST">
+                            <input type="hidden" value="<%= match._id %>" name="matchId">
+                            <button  type="submit">Delete</button>
+                        </form>
+                        </div>
+                    </div>
+                <% } %>
+        <% } else { %>
+            <h1>No Matches Found!</h1>
+        <% } %>
+   </main>
+</body>
+</html>

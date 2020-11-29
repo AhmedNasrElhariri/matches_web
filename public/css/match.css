@@ -1,0 +1,74 @@
+.match-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.match-item {
+    width: 20rem;
+    max-width: 95%;
+    margin: 1rem;
+}
+
+.match__homeTeam {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.container{
+    border: 1px solid gray;
+    width: 700px;
+    margin: 20px auto
+}
+.league{
+    background-color: rgb(173, 15, 15);
+    color:white;
+    height: 20px;
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(99, 99, 238);
+}
+.adit_button{
+    margin-bottom: 10px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    background-color:  rgb(173, 15, 15);
+}
+.adit_button a{
+    padding:20px;
+
+}
+.adit_button form{
+    display: inline;
+}
+.adit_button form button{
+    background-color:  rgb(173, 15, 15);
+    border: none;
+    color:rgb(68, 70, 165);
+}
+.title{
+    text-align: center;
+    color:rgb(68, 70, 165);
+}
+
+.li_left{
+    float: right;
+}

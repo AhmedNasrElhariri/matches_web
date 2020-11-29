@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/match.css">
+</head>
+
+<body>
+   
+    <h1 class="title"> Update the Match</h1>
+    <main>
+        <form class="match-form" action="/admin/edit_match" method="POST">
+            <div>
+                <input type="hidden" name="homeTeam" id="homeTeam" value="<%= match.homeTeam %>">
+            </div>
+            <div>
+                <input type="hidden" name="awayTeam" id="awayTeam" value="<%= match.awayTeam %>">
+            </div>
+            <div class="form-control">
+                <label for="homeScore">homeTeamScore</label>
+                <input type="number" name="homeScore" id="homeScore" value="<%= match.homeScore %>">
+            </div>
+            <div class="form-control">
+                <label for="awayScore">awayTeamScore</label>
+                <input type="number" name="awayScore" id="awayScore" value="<%= match.awayScore %>">
+            </div>
+            <div>
+                <input type="hidden" name="startTime" id="startTime" value="<%= match.startTime %>">
+            </div>
+            <div class="form-control">
+                <label for="endTime">endTime</label>
+                <input type="time" name="endTime" id="endTime">
+            </div>
+            <div class="form-control"><!-- duration set constant now and updated later  -->
+                <label for="duration">Duration</label>
+                <input type="number" name="duration" id="duration" value="90">
+            </div>
+             <div>
+                <input type="hidden" name="date" id="date" value="<%= match.date %>">
+            </div> 
+            <div>
+                <input type="hidden" name="league" id="league" value="<%= match.league %>">
+            </div>
+            <div>
+                <input type="hidden" name="id" id="id" value="<%= match._id %>">
+            </div>
+            
+            <button class="btn" type="submit">Update The Match</button>
+        </form>
+    </main>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/match.css">
+</head>
+
+<body>
+   
+    <h1 class="title"> Add the Match</h1>
+    <main>
+        <form class="match-form" action="/admin/add_match" method="POST">
+            <div class="form-control">
+                <label for="homeTeam">homeTeam</label>
+                <input type="text" name="homeTeam" id="homeTeam">
+            </div>
+            <div class="form-control">
+                <label for="awayTeam">awayTeam</label>
+                <input type="text" name="awayTeam" id="awayTeam">
+            </div>
+            <div class="form-control">
+                <label for="homeScore">homeTeamScore</label>
+                <input type="number" name="homeScore" id="homeScore" value="0">
+            </div>
+            <div class="form-control">
+                <label for="awayScore">awayTeamScore</label>
+                <input type="number" name="awayScore" id="awayScore" value="0">
+            </div>
+            <div class="form-control">
+                <label for="startTime">startTime</label>
+                <input type="time" name="startTime" id="startTime">
+            </div>
+            <div class="form-control">
+                <label for="endTime">endTime</label>
+                <input type="time" name="endTime" id="endTime">
+            </div>
+            <div class="form-control">
+                <label for="duration">Duration</label>
+                <input type="number" name="duration" id="duration">
+            </div>
+            <div class="form-control">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="form-control">
+                <label for="league">league</label>
+                <input type="text" name="league" id="league">
+            </div>
+            
+            <button class="btn" type="submit">Add Match</button>
+        </form>
+    </main>
+
+</html>
